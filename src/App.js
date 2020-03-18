@@ -1,20 +1,20 @@
-import React from "react";
-import Header from "./components/Header";
-import Information from "./components/Information";
-import BuildWebsite from "./components/BuildWebsite";
-import Additional from "./components/Additional";
-import Footer from "./components/Footer";
-import Masthead from "./components/Masthead";
+import React from 'react';
+import { Switch, Route } from "react-router-dom";
+import Home from './routes/Home';
+import Faq from './routes/Faq';
 
 function App() {
   return (
     <>
-      <Header />
-      <Masthead />
-      <Information />
-      <BuildWebsite />
-      <Additional />
-      <Footer />
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/faq">
+          <Faq />
+        </Route>
+      </Switch>
+      
     </>
   );
 }

@@ -3,7 +3,7 @@ import { ReactComponent as GithubLogo } from '../assets/github.svg';
 import leftScreenshot from '../assets/covid-19-site-template-shot-1.png';
 import rightScreenshot from '../assets/covid-19-site-template-shot-2.png';
 export default () => (
-  <section className="flex justify-center flex-col text-center py-12">
+  <section className="flex justify-center flex-col text-center py-20">
     <h2 className="text-4xl font-semibold mb-6 text-gray-800 tracking-wide">Getting information to your community <br /> 
     is more important than ever</h2>
     <p className="text-lg mb-10 text-gray-800">This customizable template website for Covid-19 news enables local and international <br /> 

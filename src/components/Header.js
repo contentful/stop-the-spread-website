@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default () => {
   return (
@@ -9,7 +10,7 @@ export default () => {
             <a className="block p-4 hover:text-blue-700" href="https://github.com/contentful/covid-19-site-template">Documentation</a>
           </li>
           <li>
-            <a className="block p-4 hover:text-blue-700" href="#">FAQ</a>
+            <Link className="block p-4 hover:text-blue-700" to="/faq">FAQ</Link>
           </li>
           <li>
             <a className="block p-4 hover:text-blue-700" 
