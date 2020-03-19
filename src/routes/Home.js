@@ -9,7 +9,7 @@ import PageTitle from '../components/PageTitle';
 export default () => (
   <>
     <Header />
-    <PageTitle 
+    <PageTitle
       title="Stop the spread"
       className="py-40"
       desc={`Create a free website for Covid-19 announcements \n and quickly share information about support services`} />
