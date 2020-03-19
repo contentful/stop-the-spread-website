@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import Obfuscate from 'react-obfuscate';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import PageTitle from '../components/PageTitle';
@@ -38,7 +39,7 @@ export default () => (
       <section className="py-10">
         <h2 className="text-4xl font-semibold mb-4 text-gray-800 tracking-wide">What if the free Contentful Micro space is too small for my website?</h2>
         <p className="py-4 text-lg text-gray-800">If your Stop the Spread site outgrows the limits of the Micro space, 
-        email support@contentful.com with the subject line “stop the spread space limit," a link to your site and your organization name and ID.</p>
+        email <Obfuscate email="support@contentful.com" headers={{ subject: "Stop the spread space limit"}} className="underline text-blue-700" /> with the subject line “stop the spread space limit," a link to your site and your organization name and ID.</p>
         <p>To find your organization name and ID, go to the web app and click the Contentful logo in the top left corner. 
         Click through "Organization settings" to "Organization information." Make sure you have the correct organization selected from the drop-down menu in the sidebar.</p>
       </section>
@@ -52,9 +53,7 @@ export default () => (
         <h2 className="text-4xl font-semibold mb-4 text-gray-800 tracking-wide">I like this project. How can I help?</h2>
         <p className="py-4 text-lg text-gray-800">Not all organizations have access to developers. 
         If you’re willing to be a hero and support those organizations, 
-        please add your name to our <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-2ShB-KY30NzRcYRVs9dG8V5D5WVCsH1d3UWcKIrGYJsaWg/viewform?usp=sf_link" className="underline text-blue-700">volunteer network</a> 
-        or <a className="underline text-blue-700" href="https://docs.google.com/spreadsheets/d/1840HvKqZPFYWHa7e6Sl5kcv1UBnOPw6VDA0vxH0Z7aU/edit#gid=63528022">search through organizations requesting help.</a>
-        We’ll connect you with requests as they’re received.</p>
+        please add your name to our <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-2ShB-KY30NzRcYRVs9dG8V5D5WVCsH1d3UWcKIrGYJsaWg/viewform?usp=sf_link" className="underline text-blue-700">volunteer network</a> or <a className="underline text-blue-700" href="https://docs.google.com/spreadsheets/d/1840HvKqZPFYWHa7e6Sl5kcv1UBnOPw6VDA0vxH0Z7aU/edit#gid=63528022">search through organizations requesting help.</a> We’ll connect you with requests as they’re received.</p>
         <p>We also need help solving open issues in <a className="underline text-blue-700" href="https://github.com/contentful/covid-19-site-template/issues/new">GitHub.</a></p>
       </section>
 
