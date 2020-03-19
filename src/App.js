@@ -11,7 +11,6 @@ function App() {
         <meta charSet="utf-8" />
         <title>Stop the spread</title>
         <meta name="description" content="Create a free website for Covid-19 announcements and quickly share information about support services" />
-        <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
       <Switch>
         <Route exact path="/">
