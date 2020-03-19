@@ -10,7 +10,7 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/faq">
+        <Route path="/faq">
           <Faq />
         </Route>
       </Switch>
