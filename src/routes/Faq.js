@@ -1,10 +1,14 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import PageTitle from '../components/PageTitle';
 
 export default () => (
   <>
+    <Helmet>
+      <title>FAQ | Stop the spread</title>
+    </Helmet>
     <Header />
     <PageTitle title="FAQ" />
     <main className="py-20 w-1/2 mx-auto">
