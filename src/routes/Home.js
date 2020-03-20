@@ -11,7 +11,7 @@ export default () => (
     <Header />
     <PageTitle
       title="Stop the spread"
-      className="py-40"
+      className="lg:py-40"
       desc={`Create a free website for Covid-19 announcements \n and quickly share information about support services`} />
     <Information />
     <BuildWebsite />

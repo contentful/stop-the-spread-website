@@ -3,10 +3,10 @@ import Card from './Card';
 
 export default () => (
   <section className="mx-auto justify-center py-20">
-    <h2 className="text-4xl text-center font-semibold mb-8 text-gray-800 tracking-wide">
+    <h2 className="text-2xl lg:text-4xl text-center font-semibold mb-8 text-gray-800 tracking-wide">
       Additional resources
     </h2>
-    <div className="flex justify-center py-4">
+    <div className="flex flex-wrap justify-center py-4">
       <div className="py-4">
         <Card 
           title={`Johns Hopkins Whiting \n School of Engineering`}
