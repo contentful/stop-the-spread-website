@@ -1,0 +1,34 @@
+
+$bg-blue-400: #63b3ed;
+
+$spacing-6: 1.5rem;
+$spacing-12: 3rem;
+
+$text-xl: 1.25rem;
+
+$text-white: #fff;
+
+@mixin mb-6 {
+  margin-bottom: $spacing-6;
+}
+
+@mixin px-6 {
+  padding-left: $spacing-6;
+  padding-right: $spacing-6;
+}
+
+@mixin h-12 {
+  height: 3rem;
+}
+
+@mixin w-12 {
+  width: 3rem;
+}
+
+@mixin rounded-full {
+  border-radius: 9999px;
+}
+
+@mixin text-white {
+  color: #fff;
+}

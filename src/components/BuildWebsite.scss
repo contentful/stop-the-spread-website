@@ -1,0 +1,41 @@
+@import './variables';
+
+ol.build-steps-list {
+  display: flex;
+  flex-direction: row;
+
+  li {
+    @include px-6;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div.list-number {
+      align-content: center;
+      vertical-align: middle;
+
+      display: inline-block;
+
+      width: $spacing-12;
+      height: $spacing-12;
+
+      background-color: $bg-blue-400;
+      color: $text-white;
+      font-size: $text-xl;
+
+      @include rounded-full;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: initial;
+
+    li {
+      flex-direction: row;
+      div.list-number {
+        align-self: flex-start;
+      }
+    }
+  }
+}
