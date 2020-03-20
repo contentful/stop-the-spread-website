@@ -22,7 +22,7 @@ export default () => (
           View demo website
       </a>
     </div>
-    <div className="flex mx-auto flex-wrap flex-row md:flex-col container">
+    <div className="flex mx-auto flex-wrap flex-row lg:flex-no-wrap container">
       <div className="p-10 lg:p-12">
         <img src={leftScreenshot} alt="Covid-19 site template screenshot for recreational center" />
       </div>
