@@ -4,6 +4,7 @@ import Obfuscate from 'react-obfuscate';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import PageTitle from '../components/PageTitle';
+import { urlFor } from '../components/Links';
 
 const MailToSupport = () =>
   <Obfuscate className="underline text-blue-700" email='support@contentful.com' headers={{ subject: 'stop-the-spread space limit'}} />
@@ -36,7 +37,7 @@ export default () => (
         <h2 className="text-4xl font-semibold mb-4 text-gray-800 tracking-wide">Can I use this without any development resources?</h2>
         <p className="py-4 text-lg text-gray-800">Although this customizable template makes building a website far more quickly,
         it’s still best to have a developer set it up. Don’t have a developer on hand?
-        You can <a href="https://docs.google.com/forms/d/e/1FAIpQLSfcdITGcpw1kWxEunHVUz6aQZzgvrGOPs3UnJvzFNafWa3M3A/viewform?usp=sf_link">request help from our volunteer network of developers and agencies</a>.</p>
+        You can <a href={urlFor('newHelpNeededForm')}>request help from our volunteer network of developers and agencies</a>.</p>
       </section>
 
       <section className="py-10">
@@ -56,12 +57,12 @@ export default () => (
         <h2 className="text-4xl font-semibold mb-4 text-gray-800 tracking-wide">I like this project. How can I help?</h2>
         <p className="py-4 text-lg text-gray-800">
           Not all organizations have access to developers. If you’re willing to be a hero and support those organizations, please add your name to our{' '}
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-2ShB-KY30NzRcYRVs9dG8V5D5WVCsH1d3UWcKIrGYJsaWg/viewform?usp=sf_link" className="underline text-blue-700">volunteer network</a>
+          <a href={urlFor('newVolunteerForm')} className="underline text-blue-700">volunteer network</a>
           {' or '}
-          <a className="underline text-blue-700" href="https://docs.google.com/spreadsheets/d/1840HvKqZPFYWHa7e6Sl5kcv1UBnOPw6VDA0vxH0Z7aU/edit#gid=63528022">search through organizations requesting help</a>
+          <a className="underline text-blue-700" href={urlFor('searchHelpNeededForm')}>search through organizations requesting help</a>
           . We’ll connect you with requests as they’re received.
         </p>
-        <p>We also need help solving open issues in <a className="underline text-blue-700" href="https://github.com/contentful/covid-19-site-template/issues/new">GitHub</a>.</p>
+        <p>We also need help solving open issues in <a className="underline text-blue-700" href={urlFor('newTemplateIssue')}>GitHub</a>.</p>
       </section>
 
       <section className="py-10">
