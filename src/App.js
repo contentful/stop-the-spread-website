@@ -5,6 +5,7 @@ import Home from './routes/Home';
 import Faq from './routes/Faq';
 import screenshot from './assets/screenshot.png';
 
+const GA_ID = 'UA-161843176-1';
 const metaData = {
   title: 'Stop the spread',
   description: 'Create a free website for Covid-19 announcements and quickly share information about support services',
@@ -29,6 +30,15 @@ function App() {
         <meta name="twitter:description" content={metaData.description} />
         <meta name="twitter:image" content={metaData.image} />
         <meta name="twitter:card" content="summary_large_image" />
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', ${GA_ID});
+          `}
+        </script>
       </Helmet>
       <Switch>
         <Route exact path="/">
