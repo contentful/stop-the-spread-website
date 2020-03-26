@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Switch, Route } from "react-router-dom";
-import withTracker from './withtraker';
+import withTracker from './withTracker';
 import Home from './routes/Home';
 import Faq from './routes/Faq';
 import screenshot from './assets/screenshot.png';
