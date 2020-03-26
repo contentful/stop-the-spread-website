@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Switch, Route } from "react-router-dom";
+import withTracker from './withtraker';
 import Home from './routes/Home';
 import Faq from './routes/Faq';
 import screenshot from './assets/screenshot.png';
@@ -31,12 +32,8 @@ function App() {
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
       <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/faq">
-          <Faq />
-        </Route>
+        <Route exact path="/" component={withTracker(Home)} />
+        <Route path="/faq" component={withTracker(Faq)} />
       </Switch>
 
     </>
