@@ -1,7 +1,8 @@
-import React from 'react';
-import contentful from '../assets/contentful.svg';
-import netlify from '../assets/netlify.svg';
-import gatsby from '../assets/gatsby.svg';
+import React from "react";
+import contentful from "../assets/contentful.svg";
+import netlify from "../assets/netlify.svg";
+import gatsby from "../assets/gatsby.svg";
+import stackbit from "../assets/stackbit.svg";
 
 export default () => (
   <footer className="bg-gray-100 py-20">
@@ -21,9 +22,15 @@ export default () => (
       </li>
       <li className="p-12">
         <a href="https://gatsbyjs.org">
-          <img src={gatsby} alt="Contenful" />
+          <img src={gatsby} alt="Gatsby" />
+        </a>
+      </li>
+      <li className="p-12">
+        <a href="https://stackbit.com/">
+          <img src={stackbit} alt="Stackbit" />
         </a>
       </li>
     </ul>
   </footer>
-)
+);
+
