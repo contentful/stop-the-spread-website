@@ -12,7 +12,7 @@ const urlsByTarget = {
   newTemplateIssue:
     "https://github.com/contentful/covid-19-site-template/issues/new",
   createWithStackbit:
-      "https://app.stackbit.com/create?theme=https://github.com/contentful/covid-19-site-template&ssg=gatsby&cms=contentful&cmsExclusive"
+      "https://app.stackbit.com/create?theme=https://github.com/contentful/covid-19-site-template&ssg=gatsby&cms=contentful&cmsExclusive=true"
 };
 
 export const urlFor = target => {
