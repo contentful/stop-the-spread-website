@@ -1,5 +1,6 @@
 import React from 'react'
 import { ReactComponent as GithubLogo } from '../assets/github.svg';
+import { ReactComponent as StackbitLogo } from '../assets/stackbit-logo.svg';
 import leftScreenshot from '../assets/covid-19-site-template-shot-1.png';
 import rightScreenshot from '../assets/covid-19-site-template-shot-2.png';
 import { urlFor } from './Links';
@@ -20,6 +21,11 @@ export default () => (
       <a href="https://demo.stop-the-spread.dev"
         className="inline-block bg-white border-2 border-blue-700 hover:text-white hover:bg-blue-700 text-blue-700 px-6 py-2">
           View demo website
+      </a>
+      <a href={urlFor('createWithStackbit')}
+         className="inline-block items-center hover:bg-blue-800 hover:border-blue-800 bg-blue-700 border-blue-700 border-2 text-white px-6 py-2 m-4">
+          <StackbitLogo className="inline-block fill-current mr-2 -mt-1" title="Stackbit logo" />
+          Create With Stackbit
       </a>
     </div>
     <div className="flex mx-auto flex-wrap flex-row lg:flex-no-wrap container">

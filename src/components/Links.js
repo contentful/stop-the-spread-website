@@ -10,7 +10,9 @@ const urlsByTarget = {
   templateRepository: "https://github.com/contentful/covid-19-site-template",
   imprint: "https://www.contentful.com/legal/de/",
   newTemplateIssue:
-    "https://github.com/contentful/covid-19-site-template/issues/new"
+    "https://github.com/contentful/covid-19-site-template/issues/new",
+  createWithStackbit:
+      "https://app.stackbit.com/create?theme=https://github.com/contentful/covid-19-site-template&ssg=gatsby&cms=contentful&cmsExclusive"
 };
 
 export const urlFor = target => {
